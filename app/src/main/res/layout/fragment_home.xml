@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_flybanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <newzhoujiteaapp.viewutils.FlyBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/flybanner"
+                android:layout_width="fill_parent"
+                android:layout_height="204dp"
+                app:points_position="RIGHT" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_notice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textview_height"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/notice" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="45dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="恭喜xx获得价值5000元的抵用券"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/icon_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/tv_buy_tea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableTop="@mipmap/buy_tea"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="买茶" />
+
+            <TextView
+                android:id="@+id/tv_store_tea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableTop="@mipmap/strage_tea"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="存茶" />
+
+            <TextView
+                android:id="@+id/tv_change_tea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:drawableTop="@mipmap/change_tea"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="转让" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingRight="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_new_tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/board_light_gray"
+                android:paddingBottom="4dp"
+                android:paddingRight="@dimen/margin10"
+                android:paddingTop="4dp"
+                android:drawableLeft="@mipmap/new_tea"
+                android:text="" />
+
+            <newzhoujiteaapp.viewutils.CustomLV
+                android:id="@+id/lv_new_tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/light_gray"
+                android:dividerHeight="5dp">
+
+            </newzhoujiteaapp.viewutils.CustomLV>
+
+            <TextView
+                android:id="@+id/tv_loadmore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_height"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_hot_tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/board_light_gray"
+                android:paddingBottom="4dp"
+                android:paddingRight="@dimen/margin10"
+                android:paddingTop="4dp"
+                android:drawableLeft="@mipmap/hot_tea"
+                android:text="" />
+
+            <newzhoujiteaapp.viewutils.CustomLV
+                android:id="@+id/lv_hot_tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/light_gray"
+                android:dividerHeight="5dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false">
+
+            </newzhoujiteaapp.viewutils.CustomLV>
+
+            <TextView
+                android:id="@+id/tv_hotloadmore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_height"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="加载更多"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_normal"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

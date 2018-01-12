@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.ActivityDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="MyPopupWindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/out_anim</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 将splash图片设置在这，这样这张图片取代白屏 -->
+        <item name="android:windowBackground">@mipmap/one</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 或者是将主题设置成透明，虽然点击图标会有点小小的卡顿，但是用户体验不影响 -->
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
+    </style>
+
+    <style name="protocol_dialog_theme" parent="@android:style/Theme.Dialog">
+            <!-- 边框 -->
+            <item name="android:windowFrame">@null</item>
+            <!-- 是否浮现在activity之上 -->
+            <item name="android:windowIsFloating">true</item>
+            <!-- 半透明 -->
+            <item name="android:windowIsTranslucent">true</item>
+            <!-- 无标题 -->
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:background">@android:color/transparent</item>
+            <!-- 背景透明 -->
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <!-- 模糊 -->
+            <item name="android:backgroundDimEnabled">true</item>
+            <!-- 遮罩层 -->
+            <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+</resources>

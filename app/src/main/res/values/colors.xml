@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="theme_bg">#f0eff5</color>
+    <color name="theme_color">#ef845c</color>
+    <color name="oregon">#f48b25</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_line">#eeeeee</color>
+    <color name="title_color">#333333</color>
+    <color name="transparent_background">#00ffffff</color>
+    <color name="half_transparent_background">#e0ffffff</color>
+    <!--文字颜色-->
+    <color name="text_color">#282828</color>
+    <color name="text_color2">#aaabad</color>
+    <color name="text_color3">#cecece</color>
+    <!--主页底部字体颜色变化-->
+    <color name="awesome_red">#CBAC6B</color>
+    <color name="awesome_gray">#FDFDFD</color>
+    <color name="blue">#5a97f2</color>
+    <color name="light_oregon">#f6a251</color>
+    <color name="gray">#8e8e8e</color>
+    <color name="light_gray">#eeeeee</color>
+
+</resources>
